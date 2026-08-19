@@ -329,3 +329,55 @@ body {
     color: #aaa;
     font-size: 0.9rem;
 }
+
+/* --- Home Body Layout Fix for Video Background --- */
+.home-body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* --- Portal Cards Styling --- */
+.portal-card {
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    padding: 50px 30px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-card:hover {
+    transform: translateY(-4px);
+    border-color: #555;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.portal-card h2, 
+.portal-card p {
+    position: relative;
+    z-index: 2;
+}
+
+.portal-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.portal-card p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
